@@ -10,11 +10,10 @@ class Tag extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'quest_name',
         'name' //tag name
     ];
 
-    protected $hidden = [
-        'id'
-    ];
+  
 }

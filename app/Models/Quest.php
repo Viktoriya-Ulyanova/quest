@@ -10,20 +10,19 @@ class Quest extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'quest_name',
         'players',
         'time',
         'price',
         'level',
         'age',
-        'descr'
-    ];
-
-    protected $hidden = [
-        'id',
+        'descr',
         'img_title',
         'images'
     ];
+
+   
 
     public function tags() {
         return $this->hasMany(Tag::class, 'quest_name', 'quest_name');

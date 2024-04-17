@@ -16,13 +16,13 @@ class Order extends Model
         'quest_name',
         'count_people',
         'price',
-    ];
-
-    protected $hidden = [
         'id',
         'img_title',
         'images',
         'order_status',
+    ];
+
+    protected $hidden = [
         'updated_at',
         'created_at'
     ];
