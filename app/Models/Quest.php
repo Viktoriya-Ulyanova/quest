@@ -22,9 +22,10 @@ class Quest extends Model
         'images'
     ];
 
-   
+
 
     public function tags() {
         return $this->hasMany(Tag::class, 'quest_name', 'quest_name');
     }
+
 }

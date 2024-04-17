@@ -17,6 +17,8 @@ class QuestController extends Controller
        return Quest::with('tags')->get();
     }
 
+    
+
     /**
      * Store a newly created resource in storage.
      *

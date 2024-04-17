@@ -30,7 +30,6 @@ class OrderController extends Controller
             $request->all(),
             [
                 'user_phone' => 'numeric|required',
-                'booking_time' => 'required',
                 'quest_name' => 'required',
                 'count_people' => 'numeric|required',
                 'price' => 'numeric|required'
@@ -38,7 +37,6 @@ class OrderController extends Controller
             [
                 'user_phone.numeric' => 'Требуемый формат: 79998883322',
                 'user_phone.required' => 'Поле с телефоном обязательно к заполнению',
-                'booking_time.required' => 'Поле с временем начала сеанса обязательно к заполнению',
                 'quest_name.required' => 'Поле с названием квеста обязательно к заполнению',
                 'count_people.numeric' => 'Требуемый формат: цифра',
                 'count_people.required' => 'Поле с количеством участников обязательно к заполнению',
