@@ -51,11 +51,11 @@ class OrderController extends Controller
         Order::make([
             'user_phone' => $request->user_phone,
             'user_mail' => $request->user_mail,
-            'booking_time' => $request->booking_time,
+            'booking_date' => $request->booking_date,
             'quest_name' => $request->quest_name,
             'count_people' => $request->count_people,
             'price' => $request->price,
-            'order_status' => 1,
+            'order_status' => 0,
         ])->save();
 
         return response()->json([
